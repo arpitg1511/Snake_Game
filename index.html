@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game" width="400" height="400"></canvas>
+  <div id="score-counter">Score: 0</div>
+  <div id="high-score">High Score: 0</div>
+  <div id="game-over" style="display:none;">Game Over!</div>
+  
+  <!-- Speed Control Slider -->
+  <label for="speed-slider">Snake Speed:</label>
+  <input type="range" id="speed-slider" min="1" max="20" value="8">
+
+  <!-- Wall Mode Selector -->
+  <label for="wall-mode">Wall Mode:</label>
+  <select id="wall-mode">
+    <option value="solid">Solid Walls</option>
+    <option value="unsolid">Unsolid Walls</option>
+  </select>
+
+  <script src="script.js"></script>
+  
+</body>
